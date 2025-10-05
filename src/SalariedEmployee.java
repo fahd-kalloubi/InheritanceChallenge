@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 public class SalariedEmployee extends Employee {
 
     double annualSalary;
@@ -19,7 +21,10 @@ public class SalariedEmployee extends Employee {
     }
 
     public void retire() {
-
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//        LocalDate currentDate = LocalDate.now();
+//        // Format the current date into a string
+//        String formattedDate = currentDate.format(formatter);
         terminate("12/12/2025");
         isRetired = true;
     }

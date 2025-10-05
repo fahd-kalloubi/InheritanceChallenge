@@ -2,7 +2,7 @@ public class Worker {
 
     private String name;
     private String birthDate;
-    protected String endDate;
+    private String endDate;
 
     public Worker() {
 
